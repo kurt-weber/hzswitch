@@ -1,0 +1,8 @@
+[Plugin]
+Loader=python3
+Module=hzswitch
+IAge=2
+Name=Hz Switch
+Description=Switch between 440Hz and 432Hz on the fly
+Authors=Kurt Weber <der.kurt.weber@t-online.de>
+Copyright=Copyright © 2017 Kurt Weber
