@@ -50,6 +50,7 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
             self.pitch_element.props.pitch = 0.98182 #Detune by -1.818% to get from 440Hz to 432Hz
         else:
             self.pitch_element.props.pitch = 1.0
+            self.remove_filter()
 
     def create_tglbtn(self):
         tglbtn = Gtk.ToggleButton(label='440Hz to 432Hz')
