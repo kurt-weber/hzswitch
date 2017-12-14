@@ -62,13 +62,14 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
 
     use_workaround = False
     def playing_song_changed(self, player, entry):
-        """This is a workaround for a stupid rhythmbox bug which randomly stops the music while keeping the player running"""
-        if self.use_workaround:
-            self.get_shell_player().disconnect(self.pc_id)
-            self.player_stop()
-            self.player_playpause()
-            self.pc_id = self.get_shell_player().connect('playing-song-changed', self.playing_song_changed)
-        self.use_workaround = not self.use_workaround    
+        """This is a workaround for a stupid rhythmbox bug which randomly stops the music but not the player itself"""
+        if self.get_shell_player().props.playing:
+            if self.use_workaround:
+                self.get_shell_player().disconnect(self.pc_id)
+                self.player_stop()
+                self.player_playpause()
+                self.pc_id = self.get_shell_player().connect('playing-song-changed', self.playing_song_changed)
+            self.use_workaround = not self.use_workaround    
 
     def create_tglbtn(self):
         tglbtn = Gtk.ToggleButton(label='440Hz to 432Hz')
