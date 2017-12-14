@@ -38,11 +38,20 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
         return self.object
 
     def get_player(self):
-        return self.get_shell().props.shell_player.props.player
+        return self.get_shell().props.shell_player.props.player #player to add filters
+
+    def get_shell_player(self):
+        return self.get_shell().props.shell_player #player to control things like pause and so on
 
     def get_toolbar(self):
         """Get the widget for the main toolbar."""
         return find_widget_by_name(self.get_shell().props.window, 'main-toolbar')
+
+    def player_stop(self):
+        self.get_shell_player().stop() #stop song
+
+    def player_playpause(self):
+        self.get_shell_player().playpause(True) #play song
 
     def on_tglbtn_toggled(self, widget, data):
         if widget.get_active():
@@ -50,10 +59,19 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
             self.pitch_element.props.pitch = 0.98182 #Detune by -1.818% to get from 440Hz to 432Hz
         else:
             self.pitch_element.props.pitch = 1.0
-            self.remove_filter()
+
+    use_workaround = False
+    def playing_song_changed(self, player, entry):
+        """This is a workaround for a stupid rhythmbox bug which randomly stops the music while keeping the player running"""
+        if self.use_workaround:
+            self.get_shell_player().disconnect(self.pc_id)
+            self.player_stop()
+            self.player_playpause()
+            self.pc_id = self.get_shell_player().connect('playing-song-changed', self.playing_song_changed)
+        self.use_workaround = not self.use_workaround    
 
     def create_tglbtn(self):
-        tglbtn = Gtk.ToggleButton(label='440Hz to 432Hz')
+        tglbtn = Gtk.ToggleButton(label='440Hz zu 432Hz')
         tglbtn.connect('toggled', self.on_tglbtn_toggled, None)
         tglbtn.set_active(False)
         tglbtn.show()
@@ -84,14 +102,16 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
 
     def do_activate(self):
         """Plugin activation callback"""
-        Gst.init([])     # Workaround for https://bugzilla.gnome.org/show_bug.cgi?id=788088
+        Gst.init([]) # Workaround for https://bugzilla.gnome.org/show_bug.cgi?id=788088
         self.pitch_element = None
         self.toolbox = self.create_toolbox()
         self.get_toolbar().insert(self.toolbox, 2)
+        self.pc_id = self.get_shell_player().connect('playing-song-changed', self.playing_song_changed)
 
     def do_deactivate(self):
         """Plugin deactivation callback"""
         self.get_toolbar().remove(self.toolbox)
         self.remove_filter()
+        self.get_shell_player().disconnect(self.pc_id)
         del self.toolbox
         del self.pitch_element
