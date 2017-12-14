@@ -71,7 +71,7 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
         self.use_workaround = not self.use_workaround    
 
     def create_tglbtn(self):
-        tglbtn = Gtk.ToggleButton(label='440Hz zu 432Hz')
+        tglbtn = Gtk.ToggleButton(label='440Hz to 432Hz')
         tglbtn.connect('toggled', self.on_tglbtn_toggled, None)
         tglbtn.set_active(False)
         tglbtn.show()
