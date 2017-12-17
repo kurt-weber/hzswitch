@@ -4,16 +4,34 @@ It works best with classical music but can be used for any kind of music.
 
 # Install
 1)Click on the green button "Clone or download"
+
+
 2)Click on "Download Zip"
+
+
 3)Extract the directory "hzswitch-master" from the zip file
-4)Simply copy the entire directory to the Rhythmbox plugins directory. For a local user on a UNIX-like system, this is ~/.local/share/rhythmbox/plugins
+
+
+4)Simply copy the entire directory to the Rhythmbox plugins directory.
+
+For a local user on a UNIX-like system, this is ~/.local/share/rhythmbox/plugins
+
 The full path would looks something like:
 /home/username/.local/share/rhythmbox/plugins/
+
 If there is no plugins directory you have to create it
+
+
 6)Start Rhythmbox
+
+
 7)In Rhythmbox click on "Tools"->"Plugins"
+
+
 8)Activate Hz Switch by checking the box next to it.
 Next to the "random symbol" a new button will appear "440Hz to 432Hz"
+
+
 9)HAVE FUN!
 
 # License
