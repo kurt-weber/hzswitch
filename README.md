@@ -29,7 +29,7 @@ If there is no plugins directory you have to create it
 
 
 8)Activate Hz Switch by checking the box next to it.
-Next to the "random symbol" a new button will appear "440Hz to 432Hz"
+Next to the "shuffle button" a new button will appear "440Hz to 432Hz"
 
 
 9)HAVE FUN!
