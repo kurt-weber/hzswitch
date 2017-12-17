@@ -36,7 +36,7 @@ Next to the "random symbol" a new button will appear "440Hz to 432Hz"
 
 # License
 
-Copyright © 2017 Kurt Weber
+GPL3 2017 Kurt Weber
 
 based on rbtempo by Bruce Merry
 
