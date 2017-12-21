@@ -16,7 +16,7 @@ It works best with classical music but can be used for any kind of music.
 
 For a local user on a UNIX-like system, this is ~/.local/share/rhythmbox/plugins
 
-The full path would looks something like:
+The full path would look something like:
 /home/username/.local/share/rhythmbox/plugins/
 
 If there is no plugins directory you have to create it
