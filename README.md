@@ -22,17 +22,17 @@ The full path would look something like:
 If there is no plugins directory you have to create it
 
 
-6)Start Rhythmbox
+5)Start Rhythmbox
 
 
-7)In Rhythmbox click on "Tools"->"Plugins"
+6)In Rhythmbox click on "Tools"->"Plugins"
 
 
-8)Activate Hz Switch by checking the box next to it.
+7)Activate Hz Switch by checking the box next to it.
 Next to the "shuffle button" a new button will appear "440Hz to 432Hz"
 
 
-9)HAVE FUN!
+8)HAVE FUN!
 
 # License
 
