@@ -2,7 +2,7 @@
 A Rhythmbox-Plugin which allows to change music from 440Hz to 432Hz on the fly.
 It works best with classical music but can be used for any kind of music.
 
-#Screenshot
+# Screenshot
 ![screenshot](https://github.com/kurt-weber/hzswitch/raw/master/hz-switch.png)
 
 # Install
@@ -32,8 +32,11 @@ If there is no plugins directory you have to create it
 
 
 7)Activate Hz Switch by checking the box next to it.
+
 Two new buttons will appear. 
+
 With the first button you can choose the operating mode.
+
 With the Hz-Switch button you can enable the plugin.
 
 
@@ -41,7 +44,7 @@ With the Hz-Switch button you can enable the plugin.
 
 # License
 
-GPL3 2017 Kurt Weber
+GPL3 2023 Kurt Weber
 
 based on rbtempo by Bruce Merry
 
