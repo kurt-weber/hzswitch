@@ -2,6 +2,9 @@
 A Rhythmbox-Plugin which allows to change music from 440Hz to 432Hz on the fly.
 It works best with classical music but can be used for any kind of music.
 
+#Screenshot
+![screenshot](https://github.com/kurt-weber/hzswitch/raw/master/hz-switch.png)
+
 # Install
 1)Click on the green button "Clone or download"
 
@@ -29,7 +32,9 @@ If there is no plugins directory you have to create it
 
 
 7)Activate Hz Switch by checking the box next to it.
-Next to the "shuffle button" a new button will appear "440Hz to 432Hz"
+Two new buttons will appear. 
+With the first button you can choose the operating mode.
+With the Hz-Switch button you can enable the plugin.
 
 
 8)HAVE FUN!
