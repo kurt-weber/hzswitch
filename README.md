@@ -35,9 +35,16 @@ If there is no plugins directory you have to create it
 
 Two new buttons will appear. 
 
-With the first button you can choose the operating mode.
+With the first button you can choose between 3 operating modes.
 
-With the Hz-Switch button you can enable the plugin.
+~Converting A4=440Hz to 432Hz
+
+~Converting A4=432Hz to 440Hz
+
+~Converting C3=128 (Rudolf Steiner frequency)
+
+
+With the Hz-Switch button you can enable/disable the convertion.
 
 
 8)HAVE FUN!
