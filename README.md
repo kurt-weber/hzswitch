@@ -37,12 +37,13 @@ Two new buttons will appear.
 
 With the first button you can choose between 3 operating modes.
 
-~Converting A4=440Hz to 432Hz
+~Mode 1: Converting A4=440Hz to 432Hz
 
-~Converting A4=432Hz to 440Hz
+~Mode 2: Converting A4=440Hz to 421.6Hz (Mozart's A4)
 
-~Converting C3=128 (Rudolf Steiner frequency)
+~Mode 3: Converting C3=128 (Rudolf Steiner frequency)
 
+~Mode 4: Converting A4=432Hz to 440Hz
 
 With the Hz-Switch button you can enable/disable the convertion.
 
