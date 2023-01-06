@@ -39,9 +39,10 @@ class HzSwitchPlugin(GObject.Object, Peas.Activatable):
     active = False
     mode = 0
     modes = [
-        ["Mode 1: A4=440Hz to 432Hz", 0.98182],   #Detune by -1.818% to get from A4=440Hz to A4=432Hz
-        ["Mode 2: A4=432Hz to 440Hz", 1.01852],   #Detune by +1.818% to get from A4=432Hz to A4=440Hz
-        ["Mode 3: C3=128Hz R.Steiner", 0.978497727273],  #Detune to get Rudolf Steiner frequency C3=128Hz or A4=430,539 Hz (only for the cool kids)
+        ["Mode 1: A4=440Hz to 432Hz", 0.98182],   #Detune by -1.818% to get from A4=440Hz to A4=432Hz        
+        ["Mode 2: A4=440Hz to 421.6Hz", 0.958181818182], #Mozart A4=421.6Hz
+        ["Mode 3: C3=130.8Hz to 128Hz", 0.978497727273],  #Detune to get Rudolf Steiner frequency C3=128Hz or A4=430,539 Hz (only for the cool kids)
+        ["Mode 4: A4=432Hz to 440Hz", 1.01852],   #Detune by +1.818% to get from A4=432Hz to A4=440Hz
     ]
 
     def get_shell(self):
