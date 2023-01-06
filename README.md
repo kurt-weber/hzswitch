@@ -6,7 +6,7 @@ It works best with classical music but can be used for any kind of music.
 ![screenshot](https://github.com/kurt-weber/hzswitch/raw/master/hz-switch.png)
 
 # Install
-1)Click on the green button "< > Code"
+1)Click on the green button "Code"
 
 
 2)Click on "Download Zip"
