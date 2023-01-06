@@ -35,7 +35,7 @@ If there is no plugins directory you have to create it
 
 Two new buttons will appear. 
 
-With the first button you can choose between 3 operating modes.
+With the first button you can choose between 4 operating modes.
 
 ~Mode 1: Converting A4=440Hz to 432Hz
 
