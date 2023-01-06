@@ -21,7 +21,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from gi.repository import GObject, GLib, Gio, Gtk, RB, Peas, Gst
-import sys
 
 def find_widget_by_name(root, name):
     """Recursively find the widget named `name` under root, returning
