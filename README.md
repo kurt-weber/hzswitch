@@ -5,7 +5,12 @@ It works best with classical music but can be used for any kind of music.
 # Screenshot
 ![screenshot](https://github.com/kurt-weber/hzswitch/raw/master/hz-switch.png)
 
-# Install
+# Before you begin
+Install the package rhythmbox-plugins (needed for some libs)
+
+sudo apt-get install rhythmbox-plugins
+
+# Install of the hzswitch-plugin
 1)Click on the green button "Code"
 
 
